@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAANGmE</title>
+    <link rel="stylesheet" href="phase2.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="center-box">
+        <h1><em>FAANG</em>ers Only</h1>
+        <div class="quiz">
+            <br>
+            <h2 id="question">Question Here</h2>
+            <div class="answer-buttons">
+                <div class="butt1">
+                    <button id="butt">Answer 1</button>
+                </div>
+                <div class="butt2">
+                    <button id="butt">Answer 2</button>
+                </div>
+                <div class="butt3">
+                    <button id="butt">Answer 3</button>
+                </div>
+                <div class="butt4">
+                    <button id="butt">Answer 4</button>
+                </div>
+                <div class="button">
+                    <button id="next" onclick="revealNextQuestion()">Forward</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="quizData.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- const questions = [
+{
+    question: "What year was Apple founded?",
+    options: ['1974', '1976', '1980', '1984'],
+    answer:'1976'
+},
+
+{
+    question: 'When was Amazon founded?',
+    options: ['1995', '1998', '2001', '2004'],
+    answer: '1995'
+},
+
+{
+    question: 'When one was Facebook founded?',
+    options: ['2001', '2003', '2005', '2007'],
+    answer: '2003'
+},
+
+{
+    question: 'When was Google founded?',
+    options: ['a) 1995', 'b) 1998', 'c) 2001', 'd) 2004'],
+    answer: 'b) 1998'
+},
+
+{
+    question: 'In which year was Netflix founded?',
+    options: ['1995', '1997', '2000', '2002'],
+    answer: '1997'
+},
+
+{
+    question: 'Which popular web browser is developed by Google?',
+    options: ['Safari', 'Firefox', 'Chrome', 'Edge'],
+    answer: 'Chrome'
+},
+
+{
+    question: 'Which Netflix original series became widely popular and helped establish the platform"s reputation for producing high-quality content?',
+    options: ['Stranger things', 'The Crown', 'House of Cards', 'Narcos'],
+    answer: 'House of Cards'
+},
+
+{
+    question: 'Which social media platform did Facebook acquire in 2012?',
+    options: ['Twitter', 'Snapchat', 'instagram', 'LinkedIn'],
+    answer: 'Instagram'
+},
+
+{
+    question: 'Which company did Amazon acquire in 2017, expanding its presence in the grocery industry?',
+    options: ['Whole Foods Market', 'Target', 'Walmart', 'Costco'],
+    answer: 'Whole Food Market'
+},
+
+{
+    question: 'What is the name of Apple storgae cloud service?',
+    options: ['iCloud', 'Apple Drive', 'iStorage', 'Apple Cloud'],
+    answer: 'iCloud'
+},
+
+{
+    question: 'Which year did Apple become the first two-trillion-dollar publicly traded company?',
+    options: ['2016', '2017', '2018', '2019'],
+    answer: '2018'
+},
+    
+{
+    question: 'What is the market capitalization of Apple as of september 2021?',
+    options: ['$500 billion', '$1 trillion', '$2 trillion', '$5 trillion'],
+    answer: '$2 trillion'
+},
+
+{
+    question: 'Which famous investor is known for his large holdings of Apple stock?',
+    options: ['Warren Buffet', 'Elon Musk', 'Jeff Bezos', 'Mark Zukerberg'],
+    answer: 'Warren buffet'
+},
+
+{
+    question: 'Who is the co-founder of Apple along with Steve Jobs?',
+    options: ['Tim Cook', 'Bill Gates', 'Steve Wozniak', 'Mark Zukerberg'],
+    answer: 'Steve Wozniak'
+},
+
+{
+    question: 'Who is the current CEO of Apple?',
+    options: ['Tim Cook', 'Jeff Bezos', 'Sundar Pichai', 'Elon Musk'],
+    answer: 'Tim Cook'
+},
+
+{
+    question: 'Who is the current CEO of Microsoft?',
+    options: ['Steve Ballmer', 'Bill Gates', 'Satya', 'Nadella'],
+    answer: 'Staya Nadella'
+},
+
+{
+    question: 'Which programming console is widely used for Windows development?',
+    options: ['Python', 'Java', 'C#', 'Ruby'],
+    answer: 'C#'
+},
+
+{
+    question: 'What year was Microsoft founded?',
+    options: ['1975', '1980', '1985', '1990'],
+    answer: '1975'
+},
+
+{
+    question: 'Which gaming console is developed by Microsodt?',
+    options: ['PlayStation', 'Xbox', 'Nintendo Switch', 'GameCube'],
+    answer: 'Xbox'
+},
+
+{
+    question: 'Which CEO do you think Tracy loves the most among these select few?',
+    options: ['Mark Zukerberg', 'Sundar Pichai', 'Bill Gates', 'Tim Cook'],
+    answer: 'Sundar Pichai'}
+];
+
+
+const questionElement = document.getElementById('questions');
+const answerButton = document.getElementsByClassName('answer-buttons');
+const nextButton = document.getElementById('next');
+
+const currentQuestionIndex = 0;
+const score = 0;
+
+
+function beginQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = 'Forward';
+    revealQuestion();
+}
+
+function revealQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    const questionNum = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNum + '. ' + currentQuestion.question;
+
+
+    currentQuestion.options.forEach(option => {
+        const button = document.createElement('button');
+        button.innerHTML = option.answer;
+        button.classList.add('butt');
+        answerButton.appendChild(button);
+    });
+}
+
+beginQuiz(); -->
