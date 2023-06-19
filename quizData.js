@@ -111,7 +111,7 @@ const questions = [
 
 {
     question: 'Which gaming console is developed by Microsoft?',
-    options: ['PlayStation', 'Xbox', 'Nintendo Switch', 'GameCube'],
+    options: [{text: 'PlayStation'}, 'Xbox', 'Nintendo Switch', 'GameCube'],
     answer: 'Xbox'
 },
 
@@ -123,40 +123,8 @@ const questions = [
 
 ];
 
-// const questionElement = document.getElementById('question');
-// const answerButton = document.getElementsByClassName('answer-buttons');
-// const nextButton = document.getElementById('next');
-
-// const currentQuestionIndex = 0;
-// const score = 0;
-
-
-// function beginQuiz() {
-//     currentQuestionIndex = 0;
-//     score = 0;
-//     nextButton.innerHTML = 'Forward';
-//     revealQuestion();
-// }
-
-// function revealQuestion() {
-//     const currentQuestion = questions[currentQuestionIndex];
-//     const questionNum = currentQuestionIndex + 1;
-//     questionElement.innerHTML = questionNum + '. ' + currentQuestion.question;
-
-
-//     currentQuestion.options.forEach((option) => {
-//         const button = document.createElement('button');
-//         button.innerHTML = option;
-//         button.classList.add('butt');
-//         answerButton.appendChild(button);
-//     });
-// }
-
-// beginQuiz();
-
-
 const questionElement = document.getElementById('question');
-const answerButtons = document.getElementsByClassName('butt');
+const answerButtons = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next');
 
 let currentQuestionIndex = 0;
@@ -170,11 +138,11 @@ function beginQuiz() {
 }
 
 function revealQuestion() {
-    currentQuestion = questions[currentQuestionIndex];
+    const currentQuestion = questions[currentQuestionIndex];
     const questionNUm = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNUm + '. ' + currentQuestion.question;
 
-    for(let i = 0; i < answerButtons.length; itt) {
+    for(let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].innerHTML = currentQuestion.options[i];
     }
 }
@@ -185,7 +153,13 @@ function revealNextQuestion() {
         revealQuestion();
     }
     else {
-        alert('You are done!');
+        const confirmMessage = confirm('End of Quiz, mylove. Wanna start over?')
+        if(confirmMessage === 'ok') {
+            onclick = "windows.location.href = 'index.html'";
+        } 
+        else {
+            beginQuiz();
+        }
     }
 }
 

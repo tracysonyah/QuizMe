@@ -34,7 +34,7 @@ body {
     font-weight: 500;
 } 
 
-#butt {
+#butta {
     background-color: transparent;
     width: 100%;
     border: 1px solid #222;
@@ -44,10 +44,58 @@ body {
     transition: all 0.5s;
 }
 
-#butt:hover {
+#buttb {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+#buttc {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+#buttd {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+
+
+#butta:hover {
     background-color: #222;
     cursor: cell;
 }
+
+#buttb:hover {
+    background-color: #222;
+    cursor: cell;
+} 
+
+#buttc:hover {
+    background-color: #222;
+    cursor: cell;
+} 
+
+#buttd:hover {
+    background-color: #222;
+    cursor: cell;
+} 
+
 
 .button {
     display: flex;
