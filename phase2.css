@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: darkblue;
+    background-color: #CA054D;
     padding: 0.1rem;
 }
 
@@ -20,13 +20,13 @@ body {
 }
 
 .center-box h1 { 
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #CA054D;
     padding-bottom: 20px;
     color: black;
 }
 
 .center-box em {
-    color: blue;
+    color: #CA054D;
 }
 
 .quiz h2 {
@@ -77,23 +77,27 @@ body {
 
 
 #butta:hover {
-    background-color: #222;
+    background-color: #CA054D;
     cursor: cell;
+    color: #fff;
 }
 
 #buttb:hover {
-    background-color: #222;
+    background-color: #CA054D;
     cursor: cell;
+    color: #fff;
 } 
 
 #buttc:hover {
-    background-color: #222;
+    background-color: #CA054D;
     cursor: cell;
+    color: #fff;
 } 
 
 #buttd:hover {
-    background-color: #222;
+    background-color: #CA054D;
     cursor: cell;
+    color: #fff;
 } 
 
 
@@ -104,22 +108,22 @@ body {
 }
 
 #next {
-    background-color: darkblue;
+    background-color: #CA054D;
     border-radius: 7px;
     color: #fff;
-    padding: 0.5rem 6rem;
+    padding: 0.8rem 8rem;
     border: 0;
     margin-top: 20px;
 }
 
 #next:hover {
-    background-color: #222;
+    background-color: black;
     cursor: pointer;
 }
 
 @media screen and (min-width: 320px) and (max-width: 380px) {
     body {
-        background-color: darkblue;
+        background-color: #ca054d;
         padding: 0.1rem;
     }
 }

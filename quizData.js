@@ -21,7 +21,7 @@ const questions = [
 
 {
     question: 'When was Google founded?',
-    options: ['a) 1995', 'b) 1998', 'c) 2001', 'd) 2004'],
+    options: ['1995', '1998', '2001', '2004'],
     answer: 'b) 1998'
 },
 
@@ -124,7 +124,6 @@ const questions = [
 ];
 
 const questionElement = document.getElementById('question');
-const answerButtons = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next');
 
 let currentQuestionIndex = 0;
@@ -133,21 +132,28 @@ let score = 0;
 function beginQuiz() {
     currentQuestionIndex = 0;
     score = 0;
+     
     nextButton.innerHTML = 'Forward';
     revealQuestion();
 }
 
 function revealQuestion() {
+    const answerButtons = document.querySelectorAll('.answer-buttons button');
     const currentQuestion = questions[currentQuestionIndex];
     const questionNUm = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNUm + '. ' + currentQuestion.question;
-
+ 
     for(let i = 0; i < answerButtons.length; i++) {
-        answerButtons[i].innerHTML = currentQuestion.options[i];
+        answerButtons[i].innerText = currentQuestion.options[i];
+        answerButtons[i].addEventListener("click", (e)=>{
+
+            console.log(e.target.innerHTML==currentQuestion.answer)
+        })
     }
 }
 
 function revealNextQuestion() {
+
     currentQuestionIndex ++;
     if(currentQuestionIndex < questions.length) {
         revealQuestion();
