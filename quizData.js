@@ -111,7 +111,7 @@ const questions = [
 
 {
     question: 'Which gaming console is developed by Microsoft?',
-    options: [{text: 'PlayStation'}, 'Xbox', 'Nintendo Switch', 'GameCube'],
+    options: ['PlayStation', 'Xbox', 'Nintendo Switch', 'GameCube'],
     answer: 'Xbox'
 },
 
@@ -120,6 +120,8 @@ const questions = [
     options: ['Mark Zukerberg', 'Sundar Pichai', 'Bill Gates', 'Tim Cook'],
     answer: 'Sundar Pichai'
 }
+
+
 
 ];
 
@@ -145,10 +147,37 @@ function revealQuestion() {
  
     for(let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].innerText = currentQuestion.options[i];
-        answerButtons[i].addEventListener("click", (e)=>{
 
-            console.log(e.target.innerHTML==currentQuestion.answer)
-        })
+        answerButtons[i].removeEventListener('click', checkAnswer);
+
+        answerButtons[i].addEventListener('click', checkAnswer);
+
+function checkAnswer(event) {
+    const selectedOPtion = event.target;
+    
+    if(selectedOPtion.innerHTML === questions[currentQuestionIndex].answer) {
+        selectedOPtion.style.background = 'blue';
+        selectedOPtion.style.color = '';
+    }
+    else{
+        selectedOPtion.style.background = 'pink';
+        selectedOPtion.style.background = '';
+    }
+}
+
+        // answerButtons[i].addEventListener("click", (e)=>{
+        //     if(e.target.innerHTML === currentQuestion.answer) {
+        //         answerButtons[i].style.backgroundColor = 'blue';
+        //         answerButtons[i].style.color = 'white';
+        //     }
+        //     else {
+        //         answerButtons[i].style.backgroundColor = 'pink';
+        //         answerButtons[i].style.color = 'white';
+        //     }
+
+            
+        // })
+
     }
 }
 
