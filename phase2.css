@@ -13,7 +13,7 @@ body {
 .center-box {
     background-color: white;
     max-width: 600px;
-    height: 500px;
+    height: 510px;
     border-radius: 8px;
     margin: 100px auto;
     padding: 30px;
@@ -23,6 +23,20 @@ body {
     border-bottom: 2px solid #CA054D;
     padding-bottom: 20px;
     color: black;
+}
+
+#timer {
+    display: flex;
+    justify-content: right;
+    background: #e1f5fe;
+    width: 7.5em;
+    border-radius: 1.8em;
+    padding: 0.7em 1.8em;
+    align-items: center;
+}
+
+#timer img {
+    padding-left: 2.6rem;
 }
 
 .center-box em {
@@ -44,6 +58,16 @@ body {
     transition: all 0.5s;
 }
 
+#butta:hover:not([disabled]) {
+    background-color: #CA054D;
+    cursor: cell;
+    color: #fff;
+}
+
+#butta:disabled {
+    cursor: no-drop;
+}
+
 #buttb {
     background-color: transparent;
     width: 100%;
@@ -52,6 +76,16 @@ body {
     margin: 10px 0;
     padding: 10px;
     transition: all 0.5s;
+}
+
+#buttb:hover:not([disabled]) {
+    background-color: #CA054D;
+    cursor: cell;
+    color: #fff;
+} 
+
+#buttb:disabled {
+    cursor: no-drop;
 }
 
 #buttc {
@@ -64,6 +98,16 @@ body {
     transition: all 0.5s;
 }
 
+#buttc:hover:not([disabled]) {
+    background-color: #CA054D;
+    cursor: cell;
+    color: #fff;
+} 
+
+#buttc:disabled {
+    cursor: no-drop;
+}
+
 #buttd {
     background-color: transparent;
     width: 100%;
@@ -74,31 +118,15 @@ body {
     transition: all 0.5s;
 }
 
-
-
-#butta:hover {
+#buttd:hover:not([disabled]) {
     background-color: #CA054D;
     cursor: cell;
     color: #fff;
+} 
+
+#buttd:disabled {
+    cursor: no-drop;
 }
-
-#buttb:hover {
-    background-color: #CA054D;
-    cursor: cell;
-    color: #fff;
-} 
-
-#buttc:hover {
-    background-color: #CA054D;
-    cursor: cell;
-    color: #fff;
-} 
-
-#buttd:hover {
-    background-color: #CA054D;
-    cursor: cell;
-    color: #fff;
-} 
 
 
 .button {
@@ -109,17 +137,33 @@ body {
 
 #next {
     background-color: #CA054D;
-    border-radius: 7px;
+    border-radius: 6%;
     color: #fff;
-    padding: 0.8rem 8rem;
+    padding: 0.6rem 2rem;
     border: 0;
     margin-top: 20px;
+    display: none;
 }
 
 #next:hover {
     background-color: black;
     cursor: pointer;
 }
+
+#back {
+    background-color: #CA054D;
+    border-radius: 6%;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border: 0;
+    margin-top: 20px;
+}
+
+#back:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 380px) {
     body {

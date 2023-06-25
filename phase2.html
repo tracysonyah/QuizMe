@@ -10,7 +10,11 @@
 <body>
 <div class="wrapper">
     <div class="center-box">
-        <h1><em>FAANG</em>ers Only</h1>
+        <h1><em>FAANG</em>ers Only</h1> 
+        <div id="timer">
+            <img src="icon.png" alt="img" width="60px">
+            <span id="time-left">60s</span>
+        </div>
         <div class="quiz">
             <br>
             <h2 id="question">Question Here</h2>
@@ -20,10 +24,13 @@
                 <button id="buttc">Answer 3</button>
                 <button id="buttd">Answer 4</button>
             </div>
-                <div class="button">
-                    <button id="next" onclick="revealNextQuestion()">Forward</button>
+            <div class="button">
+                <button id="next" onclick="revealNextQuestion()">Forward</button>
+                <div id="result">
+
                 </div>
             </div>
+
         </div>
     </div>
 </div>

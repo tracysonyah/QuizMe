@@ -12,7 +12,7 @@ body {
 .custom-box {
     background-color: #fff;
     width: 600px;
-    height: 150px;
+    height: 190px;
     border-radius: 10px;
     margin: 100px auto;
 }
@@ -48,9 +48,9 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
     .custom-box {
-        background-color: #ca054d;
+        background-color: #fff;
         width: 300px;
-        height: 150px;
+        height: 235px;
         border-radius: 10px;
         margin: 100px auto;
         margin-top: 60%;
