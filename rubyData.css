@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: red;
+    background-color: rgb(185, 27, 27);
     padding: 0.1rem;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .center-box h1 { 
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid rgb(185, 27, 27);
     padding-bottom: 20px;
     color: black;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .center-box em {
-    color: red;
+    color: rgb(185, 27, 27);
 }
 
 .quiz h2 {
@@ -67,7 +67,7 @@ body {
 }
 
 #butta:hover:not([disabled]) {
-    background-color: red;
+    background-color: rgb(185, 27, 27);
     cursor: cell;
     color: #fff;
 }
@@ -87,7 +87,7 @@ body {
 }
 
 #buttb:hover:not([disabled]) {
-    background-color: red;
+    background-color: rgb(185, 27, 27);
     cursor: cell;
     color: #fff;
 } 
@@ -107,7 +107,7 @@ body {
 }
 
 #buttc:hover:not([disabled]) {
-    background-color: red;
+    background-color: rgb(185, 27, 27);
     cursor: cell;
     color: #fff;
 } 
@@ -127,7 +127,7 @@ body {
 }
 
 #buttd:hover:not([disabled]) {
-    background-color: red;
+    background-color: rgb(185, 27, 27);
     cursor: cell;
     color: #fff;
 } 
@@ -144,7 +144,7 @@ body {
 }
 
 #next {
-    background-color: red;
+    background-color: rgb(185, 27, 27);
     border-radius: 6%;
     color: #fff;
     padding: 0.6rem 2rem;
@@ -159,7 +159,7 @@ body {
 }
 
 #back {
-    background-color: red;
+    background-color: rgb(185, 27, 27);
     border-radius: 6%;
     color: #fff;
     padding: 0.6rem 2rem;

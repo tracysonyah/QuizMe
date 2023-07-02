@@ -142,9 +142,6 @@ let seconds = 0;
 
 function restartQuiz() { 
     beginQuiz();
-
-    // revealQuestion();
-    // revealNextQuestion();
 }
 
 function beginQuiz() {
@@ -266,9 +263,6 @@ function displayResult() {
     result.style.padding = '4rem';
     result.style.fontSize = 'xx-large'
 
-    restartButton.style.display = 'block';
-    restartButton.addEventListener('click', restartQuiz);
-
 
     const answerButtons = document.querySelectorAll('.answer-buttons button');
     answerButtons.forEach(button => {
@@ -279,7 +273,13 @@ function displayResult() {
     nextButton.style.display = 'none';
     timer.style.display = 'none';
     // timerimg.style.display = 'none'
+
+    restartButton.style.display = 'block';
+    restartButton.addEventListener('click', beginQuiz);
+
 }
+
+
 
 beginQuiz();
 
