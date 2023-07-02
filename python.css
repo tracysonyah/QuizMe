@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #ca054d;
+    background-color: darkblue;
 }
 
 .custom-box {
@@ -29,7 +29,7 @@ body {
 
 .custom-box button {
     padding: 13px;
-    background: #ca054d;
+    background: darkblue;
     border-radius: 5px;
     color: #fff;
     border: none;
@@ -48,7 +48,7 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
     .custom-box {
-        background-color: #fff;
+        /* background-color: #fff; */
         width: 300px;
         height: 235px;
         border-radius: 10px;
@@ -56,6 +56,3 @@ body {
         margin-top: 60%;
     }
 }
-
-@media and (max-width: 900px)
-    

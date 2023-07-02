@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: wheat;
+    background-color: red;
     padding: 0.1rem;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .center-box h1 { 
-    border-bottom: 2px solid #CA054D;
+    border-bottom: 2px solid red;
     padding-bottom: 20px;
     color: black;
 }
@@ -29,11 +29,10 @@ body {
     float: right;
 }
 
-
 #timer {
     display: flex;
     justify-content: right;
-    background: #e1f5fe;
+    background: ghostwhite;
     width: 7.5em;
     border-radius: 1.8em;
     padding: 0.7em 1.8em;
@@ -49,7 +48,7 @@ body {
 }
 
 .center-box em {
-    color: #CA054D;
+    color: red;
 }
 
 .quiz h2 {
@@ -68,7 +67,7 @@ body {
 }
 
 #butta:hover:not([disabled]) {
-    background-color: #CA054D;
+    background-color: red;
     cursor: cell;
     color: #fff;
 }
@@ -88,7 +87,7 @@ body {
 }
 
 #buttb:hover:not([disabled]) {
-    background-color: #CA054D;
+    background-color: red;
     cursor: cell;
     color: #fff;
 } 
@@ -108,7 +107,7 @@ body {
 }
 
 #buttc:hover:not([disabled]) {
-    background-color: #CA054D;
+    background-color: red;
     cursor: cell;
     color: #fff;
 } 
@@ -128,7 +127,7 @@ body {
 }
 
 #buttd:hover:not([disabled]) {
-    background-color: #CA054D;
+    background-color: red;
     cursor: cell;
     color: #fff;
 } 
@@ -145,10 +144,10 @@ body {
 }
 
 #next {
-    background-color: #CA054D;
+    background-color: red;
     border-radius: 6%;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 2rem;
     border: 0;
     margin-top: 20px;
     display: none;
@@ -160,7 +159,7 @@ body {
 }
 
 #back {
-    background-color: #CA054D;
+    background-color: red;
     border-radius: 6%;
     color: #fff;
     padding: 0.6rem 2rem;
@@ -176,7 +175,7 @@ body {
 }
 
 #restart {
-    background-color: #c4bebe;
+    background-color: #aca1a1;
     border-radius: none;
     color: #fff;
     padding: 5px;
@@ -192,18 +191,18 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 380px) {
     body {
-        background-color: wheat;
         padding: 0.1rem;
     }
 
     .center-box {
         background-color: white;
         max-width: 600px;
-        height: 570px;
+        height: 620px;
         border-radius: 8px;
         margin: 100px auto;
         padding: 30px;
     }
+    
 }
     
    
