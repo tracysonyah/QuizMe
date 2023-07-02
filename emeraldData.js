@@ -48,9 +48,6 @@ let seconds = 0;
 
 function restartQuiz() { 
     beginQuiz();
-
-    // revealQuestion();
-    // revealNextQuestion();
 }
 
 function beginQuiz() {
