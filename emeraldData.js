@@ -147,7 +147,7 @@ function stopTimer() {
 function displayResult() {
     const totalQuestions = questions.length;
     const questionsAnswered = score / 10;
-    const percentage = (score);
+    const percentage = (score); 
     const resultMessage = `You answered ${questionsAnswered} out of ${totalQuestions} correctly. (${percentage}%)`;
     
 
@@ -155,12 +155,15 @@ function displayResult() {
 
     document.getElementById('back').style.display = 'none'
 
-    result.style.background = 'green';
+    result.style.background = 'rgb(185, 27, 27)                                                                                                                                     ';
     result.style.color = '#fff';
     result.style.padding = '4rem';
     result.style.fontSize = 'xx-large'
+    
 
     restartButton.style.display = 'block';
+    document.querySelector(".button").style.flexDirection = 'column';
+    
 
     const answerButtons = document.querySelectorAll('.answer-buttons button');
     answerButtons.forEach(button => {

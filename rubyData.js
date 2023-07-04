@@ -69,7 +69,6 @@ const timer = document.getElementById('time-left');
 const result = document.getElementById('result');
 const restartButton = document.getElementById('restart');
 
-
 let currentQuestionIndex = 0;
 let score = 0;
 let timeInterval;
@@ -192,6 +191,7 @@ function displayResult() {
     
 
     restartButton.style.display = 'block';
+    document.querySelector(".button").style.flexDirection = 'column';
     
 
     const answerButtons = document.querySelectorAll('.answer-buttons button');
