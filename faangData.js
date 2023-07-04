@@ -140,10 +140,6 @@ let timeInterval;
 let seconds = 0;
 
 
-function restartQuiz() { 
-    beginQuiz();
-}
-
 function beginQuiz() {
     restartButton.style.display = 'none'
     currentQuestionIndex = 0;
@@ -250,7 +246,7 @@ function stopTimer() {
 function displayResult() {
     const totalQuestions = questions.length;
     const questionsAnswered = score / 5;
-    const percentage = (score); // .toFixed(2);
+    const percentage = (score); 
     const resultMessage = `You answered ${questionsAnswered} out of ${totalQuestions} correctly. (${percentage}%)`;
     
 
@@ -272,11 +268,9 @@ function displayResult() {
     questionElement.style.display = 'none';
     nextButton.style.display = 'none';
     timer.style.display = 'none';
-    // timerimg.style.display = 'none'
 
     restartButton.style.display = 'block';
-    restartButton.addEventListener('click', beginQuiz);
-
+    
 }
 
 
