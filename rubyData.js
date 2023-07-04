@@ -189,8 +189,10 @@ function displayResult() {
     result.style.color = '#fff';
     result.style.padding = '4rem';
     result.style.fontSize = 'xx-large'
+    
 
     restartButton.style.display = 'block';
+    
 
     const answerButtons = document.querySelectorAll('.answer-buttons button');
     answerButtons.forEach(button => {

@@ -120,10 +120,6 @@ function revealNextQuestion() {
     }
     else {
         stopTimer();
-        const confirmMessage = confirm('End of Quiz. Wanna start over?')
-        if(confirmMessage === true) {
-            beginQuiz();
-        } 
         displayResult();
     }
 }
