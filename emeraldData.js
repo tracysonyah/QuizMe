@@ -129,7 +129,7 @@ function revealNextQuestion() {
 }
 
 function startTimer() {
-    let seconds = 30 * 6;
+    let seconds = 30 * 5;
     timeInterval = setInterval(() => {
         seconds --;
         const minutes = Math.floor(seconds / 60);

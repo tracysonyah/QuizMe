@@ -29,35 +29,35 @@ const questions = [
         answer: 'each'
     },
 
-    {
-        question: 'puts "Hello, World!".length outputs what?',
-        options: ['13', '12', '11', '10'],
-        answer: '11'
-    },
+    // {
+    //     question: 'puts "Hello, World!".length outputs what?',
+    //     options: ['13', '12', '11', '10'],
+    //     answer: '11'
+    // },
 
-    {
-        question: 'In Ruby, what does the `self` keyword refer to?',
-        options: ['The current class', 'The current object', 'The parent object', 'The parent class'],
-        answer: 'The current object'
-    },
+    // {
+    //     question: 'In Ruby, what does the `self` keyword refer to?',
+    //     options: ['The current class', 'The current object', 'The parent object', 'The parent class'],
+    //     answer: 'The current object'
+    // },
 
-    {
-        question: 'What is the purpose of the `attr_accessor` method in Ruby?',
-        options: ['It defines a class-level attribute?', 'It defines a read-only attribute', 'It defines both getter and setter methods for an attribute', 'It defines only the getter method for an attribute'],
-        answer: 'It defines both getter and setter methods for an attribute'
-    },
+    // {
+    //     question: 'What is the purpose of the `attr_accessor` method in Ruby?',
+    //     options: ['It defines a class-level attribute?', 'It defines a read-only attribute', 'It defines both getter and setter methods for an attribute', 'It defines only the getter method for an attribute'],
+    //     answer: 'It defines both getter and setter methods for an attribute'
+    // },
 
-    {
-        question: 'The purpose of the `require` keyword in Ruby is?',
-        options: ['It imports a library or external file', 'It defines a new class', 'It creates a new instance of a class', 'It declares a module'],
-        answer: 'It imports a library or external file'
-    },
+    // {
+    //     question: 'The purpose of the `require` keyword in Ruby is?',
+    //     options: ['It imports a library or external file', 'It defines a new class', 'It creates a new instance of a class', 'It declares a module'],
+    //     answer: 'It imports a library or external file'
+    // },
 
-    {
-        question: 'puts [1,2,3,4].map { |x| * 2 } outputs what?',
-        options: ['[1,2,3,4]', '[2,4,6,8]', '[1,4,9,16', '1,3,5,7'],
-        answer: '[2,4,6,8]'
-    },
+    // {
+    //     question: 'puts [1,2,3,4].map { |x| * 2 } outputs what?',
+    //     options: ['[1,2,3,4]', '[2,4,6,8]', '[1,4,9,16', '1,3,5,7'],
+    //     answer: '[2,4,6,8]'
+    // },
         
 ];
 localStorage.setItem('questions', JSON.stringify(questions));
@@ -150,16 +150,12 @@ function revealNextQuestion() {
     }
     else {
         stopTimer();
-        const confirmMessage = confirm('End of Quiz. Wanna start over?')
-        if(confirmMessage === true) {
-            beginQuiz();
-        } 
         displayResult();
     }
 }
 
 function startTimer() {
-    let seconds = 30 * 10;
+    let seconds = 30 * 5;
     timeInterval = setInterval(() => {
         seconds --;
         const minutes = Math.floor(seconds / 60);

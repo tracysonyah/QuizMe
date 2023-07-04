@@ -31,95 +31,95 @@ const questions = [
         answer: '1997'
     },
 
-    {
-        question: 'The web browser developed by Google is?',
-        options: ['Safari', 'Firefox', 'Chrome', 'Edge'],
-        answer: 'Chrome'
-    },
+    // {
+    //     question: 'The web browser developed by Google is?',
+    //     options: ['Safari', 'Firefox', 'Chrome', 'Edge'],
+    //     answer: 'Chrome'
+    // },
 
-    {
-        question: 'What was the original business model of Netflix??',
-        options: ['Online shopping', 'Social networking', 'DVD rental by mail', 'Video game Streaming'],
-        answer: 'DVD rental by mail'
-    },
+    // {
+    //     question: 'What was the original business model of Netflix??',
+    //     options: ['Online shopping', 'Social networking', 'DVD rental by mail', 'Video game Streaming'],
+    //     answer: 'DVD rental by mail'
+    // },
 
-    {
-        question: 'Which social media platform did Facebook acquire in 2012?',
-        options: ['Twitter', 'Snapchat', 'Instagram', 'LinkedIn'],
-        answer: 'Instagram'
-    },
+    // {
+    //     question: 'Which social media platform did Facebook acquire in 2012?',
+    //     options: ['Twitter', 'Snapchat', 'Instagram', 'LinkedIn'],
+    //     answer: 'Instagram'
+    // },
 
-    {
-        question: 'The name of Amazon e-reader device?',
-        options: ['Kindle', 'Fire Tablet', 'Echo Dot', 'Fire TV Stick'],
-        answer: 'Kindle'
-    },
+    // {
+    //     question: 'The name of Amazon e-reader device?',
+    //     options: ['Kindle', 'Fire Tablet', 'Echo Dot', 'Fire TV Stick'],
+    //     answer: 'Kindle'
+    // },
 
-    {
-        question: 'The name of Apple storage cloud service?',
-        options: ['iCloud', 'Apple Drive', 'iStorage', 'Apple Cloud'],
-        answer: 'iCloud'
-    },
+    // {
+    //     question: 'The name of Apple storage cloud service?',
+    //     options: ['iCloud', 'Apple Drive', 'iStorage', 'Apple Cloud'],
+    //     answer: 'iCloud'
+    // },
 
-    {
-        question: 'Apple became the first two-trillion-dollar publicly traded company?',
-        options: ['2016', '2017', '2018', '2019'],
-        answer: '2018'
-    },
+    // {
+    //     question: 'Apple became the first two-trillion-dollar publicly traded company?',
+    //     options: ['2016', '2017', '2018', '2019'],
+    //     answer: '2018'
+    // },
     
-    {
-        question: 'What is the market capitalization of Apple as of september 2021?',
-        options: ['$500 billion', '$1 trillion', '$2 trillion', '$5 trillion'],
-        answer: '$2 trillion'
-    },
+    // {
+    //     question: 'What is the market capitalization of Apple as of september 2021?',
+    //     options: ['$500 billion', '$1 trillion', '$2 trillion', '$5 trillion'],
+    //     answer: '$2 trillion'
+    // },
 
-    {
-        question: 'Which famous investor is known for his large holdings of Apple stock?',
-        options: ['Warren Buffet', 'Elon Musk', 'Jeff Bezos', 'Mark Zukerberg'],
-        answer: 'Warren Buffet'
-    },
+    // {
+    //     question: 'Which famous investor is known for his large holdings of Apple stock?',
+    //     options: ['Warren Buffet', 'Elon Musk', 'Jeff Bezos', 'Mark Zukerberg'],
+    //     answer: 'Warren Buffet'
+    // },
 
-    {
-        question: 'Who is the co-founder of Apple along with Steve Jobs?',
-        options: ['Tim Cook', 'Bill Gates', 'Steve Wozniak', 'Mark Zukerberg'],
-        answer: 'Steve Wozniak'
-    },
+    // {
+    //     question: 'Who is the co-founder of Apple along with Steve Jobs?',
+    //     options: ['Tim Cook', 'Bill Gates', 'Steve Wozniak', 'Mark Zukerberg'],
+    //     answer: 'Steve Wozniak'
+    // },
 
-    {
-        question: 'Who is the current CEO of Apple?',
-        options: ['Tim Cook', 'Jeff Bezos', 'Sundar Pichai', 'Elon Musk'],
-        answer: 'Tim Cook'
-    },
+    // {
+    //     question: 'Who is the current CEO of Apple?',
+    //     options: ['Tim Cook', 'Jeff Bezos', 'Sundar Pichai', 'Elon Musk'],
+    //     answer: 'Tim Cook'
+    // },
 
-    {
-        question: 'Who is the current CEO of Microsoft?',
-        options: ['Steve Ballmer', 'Bill Gates', 'Tim Berners-Lee', 'Staya Nadella'],
-        answer: 'Staya Nadella'
-    },
+    // {
+    //     question: 'Who is the current CEO of Microsoft?',
+    //     options: ['Steve Ballmer', 'Bill Gates', 'Tim Berners-Lee', 'Staya Nadella'],
+    //     answer: 'Staya Nadella'
+    // },
 
-    {
-        question: 'The programming console widely used for Windows development?',
-        options: ['Python', 'Java', 'C#', 'Ruby'],
-        answer: 'C#'
-    },
+    // {
+    //     question: 'The programming console widely used for Windows development?',
+    //     options: ['Python', 'Java', 'C#', 'Ruby'],
+    //     answer: 'C#'
+    // },
 
-    {
-        question: 'What year was Microsoft founded?',
-        options: ['1975', '1980', '1985', '1990'],
-        answer: '1975'
-    },
+    // {
+    //     question: 'What year was Microsoft founded?',
+    //     options: ['1975', '1980', '1985', '1990'],
+    //     answer: '1975'
+    // },
 
-    {
-        question: 'Which gaming console is developed by Microsoft?',
-        options: ['PlayStation', 'Xbox', 'Nintendo Switch', 'GameCube'],
-        answer: 'Xbox'
-    },
+    // {
+    //     question: 'Which gaming console is developed by Microsoft?',
+    //     options: ['PlayStation', 'Xbox', 'Nintendo Switch', 'GameCube'],
+    //     answer: 'Xbox'
+    // },
 
-    {
-        question: 'The name of Microsoft cloud computing platform is?',
-        options: ['SharePoint', 'OneDrive', 'Microsoft Azure', 'Microsoft 365'],
-        answer: 'Microsoft Azure'
-    }
+    // {
+    //     question: 'The name of Microsoft cloud computing platform is?',
+    //     options: ['SharePoint', 'OneDrive', 'Microsoft Azure', 'Microsoft 365'],
+    //     answer: 'Microsoft Azure'
+    // }
 ];
 localStorage.setItem('questions', JSON.stringify(questions));
 
@@ -215,16 +215,12 @@ function revealNextQuestion() {
     }
     else {
         stopTimer();
-        const confirmMessage = confirm('End of Quiz. Wanna start over?')
-        if(confirmMessage === true) {
-            beginQuiz();
-        } 
         displayResult();
     }
 }
 
 function startTimer() {
-    let seconds = 30 * 20;
+    let seconds = 30 * 5;
     timeInterval = setInterval(() => {
         seconds --;
         const minutes = Math.floor(seconds / 60);

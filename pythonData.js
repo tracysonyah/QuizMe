@@ -29,35 +29,35 @@ const questions = [
         answer: '48'
     },
 
-    {
-        question: 'The keyword to define a function in python is?',
-        options: ['define', 'function', 'def', 'func'],
-        answer: 'def'
-    },
+    // {
+    //     question: 'The keyword to define a function in python is?',
+    //     options: ['define', 'function', 'def', 'func'],
+    //     answer: 'def'
+    // },
 
-    {
-        question: 'Which operator is used for exponentiation in python?',
-        options: ['^', '**', '//', '%'],
-        answer: '**'
-    },
+    // {
+    //     question: 'Which operator is used for exponentiation in python?',
+    //     options: ['^', '**', '//', '%'],
+    //     answer: '**'
+    // },
 
-    {
-        question: 'What is the purpose of the `if` statement in python?',
-        options: ['It defines a loop', 'It checks a condition and executes code based on the result', 'It defines a function', 'It performs mathematical calculations'],
-        answer: 'It checks a condition and executes code based on the result'
-    },
+    // {
+    //     question: 'What is the purpose of the `if` statement in python?',
+    //     options: ['It defines a loop', 'It checks a condition and executes code based on the result', 'It defines a function', 'It performs mathematical calculations'],
+    //     answer: 'It checks a condition and executes code based on the result'
+    // },
 
-    {
-        question: 'print("Python".find("on")) outputs what?',
-        options: ['0', '1', '2', '3'],
-        answer: '3'
-    },
+    // {
+    //     question: 'print("Python".find("on")) outputs what?',
+    //     options: ['0', '1', '2', '3'],
+    //     answer: '3'
+    // },
 
-    {
-        question: 'How do you convert a string to uppercase in Python?',
-        options: ['string.upper()', 'string.toUpperCase()', 'string.uppercase', 'string.toUpper()'],
-        answer: 'string.upper()'
-    },
+    // {
+    //     question: 'How do you convert a string to uppercase in Python?',
+    //     options: ['string.upper()', 'string.toUpperCase()', 'string.uppercase', 'string.toUpper()'],
+    //     answer: 'string.upper()'
+    // },
         
 ];
 localStorage.setItem('questions', JSON.stringify(questions));
@@ -150,16 +150,12 @@ function revealNextQuestion() {
     }
     else {
         stopTimer();
-        const confirmMessage = confirm('End of Quiz. Wanna start over?')
-        if(confirmMessage === true) {
-            beginQuiz();
-        } 
         displayResult();
     }
 }
 
 function startTimer() {
-    let seconds = 30 * 10;
+    let seconds = 30 * 5;
     timeInterval = setInterval(() => {
         seconds --;
         const minutes = Math.floor(seconds / 60);
