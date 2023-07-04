@@ -248,9 +248,9 @@ function displayResult() {
 
     result.innerHTML = resultMessage;
 
-    document.getElementById('back').style.display = 'none'
+    document.getElementById('back').style.display = 'none';
 
-    result.style.background = 'rgb(185, 27, 27)                                                                                                                                     ';
+    result.style.backgroundColor = '#CA054D                                                                                                                                  ';
     result.style.color = '#fff';
     result.style.padding = '4rem';
     result.style.fontSize = 'xx-large'

@@ -155,7 +155,7 @@ function displayResult() {
 
     document.getElementById('back').style.display = 'none'
 
-    result.style.background = 'rgb(185, 27, 27)                                                                                                                                     ';
+    result.style.background = 'green                                                                                                                                     ';
     result.style.color = '#fff';
     result.style.padding = '4rem';
     result.style.fontSize = 'xx-large'
